@@ -1,0 +1,21 @@
+# Reference only. scripts/install.sh writes a unit with your absolute Node path.
+[Unit]
+Description=snipd local text expansion
+PartOf=graphical-session.target
+After=graphical-session.target
+StartLimitIntervalSec=60
+StartLimitBurst=3
+[Service]
+Type=simple
+ExecStart=/usr/bin/node %h/.local/lib/snipd/src/cli.ts run
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=3
+KillMode=control-group
+UMask=0077
+NoNewPrivileges=yes
+RestrictAddressFamilies=AF_UNIX
+LockPersonality=yes
+RestrictRealtime=yes
+[Install]
+WantedBy=graphical-session.target

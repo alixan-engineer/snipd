@@ -1,0 +1,1 @@
+{"name":"snipd","version":"0.1.0","private":true,"type":"module","engines":{"node":">=24.12"},"scripts":{"start":"node src/cli.ts run","test":"node --test test/*.test.ts","build:native":"cc -std=c11 -O2 -Wall -Wextra -Werror native/input.c -o native/snipd-input"},"license":"MIT"}

@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "device": "/dev/input/by-id/REPLACE_WITH_YOUR_KEYBOARD-event-kbd",
+  "mode": "keys",
+  "paste": "ctrl-v",
+  "idleMs": 1500,
+  "matches": {
+    ":name": "Alikhan",
+    ":surname": "Zhumazhanov",
+    ":fullname": "Alikhan Zhumazhanov",
+    ":phone": "+7 777 123 45 67",
+    ":mail": "example@gmail.com"
+  }
+}
